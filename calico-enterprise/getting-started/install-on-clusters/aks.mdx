@@ -39,6 +39,12 @@ Install {{prodname}} on an AKS managed Kubernetes cluster.
     details='Policy:Calico,IPAM:Azure,CNI:Azure,Overlay:Yes,Routing:VPC Native,Datastore:Kubernetes'
   />
 
+**Recommended**
+
+- Set suggested value for maximum number of pods per node
+  
+  It is recommended to set the maximum pods per node to be at least 60 for use with Calico Enterprise. The default value in AKS is 30. If you need to increase the number of pods per node, see [Configure maximum pods per node](https://docs.microsoft.com/en-us/azure/aks/configure-azure-cni#configure-maximum-pods-per-node).
+
 **Required**
 
 - A [compatible AKS cluster](../compatibility.mdx#aks)
